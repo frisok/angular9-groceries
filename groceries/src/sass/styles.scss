@@ -1,0 +1,45 @@
+@import './_variables';
+@import './_mixins';
+
+html, body {
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (min-width: 767.99px) {
+  body {
+    padding: {
+      top: 75px;
+    }
+  }
+}
+
+@media (max-width:  991.98px) {
+
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1199.99px) {
+
+}
+
+body {
+  font: {
+    family: Roboto, "Helvetica Neue", sans-serif;
+  }
+
+}
+
+._bg-light {
+  /*background: {
+    color: $bg-color;
+  }*/
+  @include background;
+}
