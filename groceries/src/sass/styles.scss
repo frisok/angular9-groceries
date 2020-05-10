@@ -50,12 +50,11 @@ body {
   font: {
     family: Roboto, "Helvetica Neue", sans-serif;
   }
-
 }
 
-._bg-light {
+._bg-header {
   /*background: {
     color: $bg-color;
   }*/
-  @include background;
+  @include background-header;
 }
