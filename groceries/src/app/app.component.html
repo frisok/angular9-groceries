@@ -1,40 +1,39 @@
-<div class="container">
-  <nav class="navbar navbar-expand-md fixed-top navbar-light _bg-header">
-    <i class="navbar-brand fa fa-shopping-basket mx-lg-3"></i>
+<nav class="nav bg-header">
 
-    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+     <span class="navbar-toggler-icon"></span>
+   </button>-->
 
-    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item mx-lg-1">
-          <a class="nav-link" href="#">Nu</a>
-        </li>
-        <li class="nav-item active mx-lg-1">
-          <a class="nav-link" href="#">Lijsten<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item mx-lg-1">
-          <a class="nav-link" href="#">Producten</a>
-        </li>
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>-->
-      </ul>
-      <form class="form-inline my-1 my-lg-2">
-        <input class="form-control mr-sm-2" type="text" placeholder="Zoek" aria-label="Zoek">
-        <button class="btn btn-secondary" type="submit">Zoek</button>
-      </form>
-    </div>
-  </nav>
-</div>
+  <div class="left">
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <!--<div class="icon_wrap">-->
+        <i class="fa fa-shopping-basket icon"></i>
+        <!--</div>-->
+      </li>
+      <li class="nav-list-item">
+        <a class="" href="#">Nu</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="" href="#">Lijsten<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-list-item">
+        <a class="" href="#">Producten</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="right nav-search">
+    <form>
+      <input class="" type="text" placeholder="Zoek" aria-label="Zoek">
+      <button class="" type="submit">Zoek</button>
+    </form>
+  </div>
+
+</nav>
 
 <!--
+
 <P>https://scotch.io/tutorials/using-sass-with-the-angular-cli#toc-starting-an-angular-cli-project-with-sass</P>
 
 <p>https://startbootstrap.com/</p>
@@ -42,111 +41,28 @@
 <p>https://startbootstrap.com/templates/business-frontpage/</p>
 
 -->
+<div class="sidebar bg-white">
+  <div>menu</div>
+</div>
 
-<main class="container">
-  <div class="row">
-    <div class="col-md-4 mr-lg-5 m-2 p-3 bg-white rounded-lg shadow-sm">
-      <div class="row">
-        <div class="col-md">Naam</div>
-        <div class="col-md">Omschrijving</div>
-      </div>
-      <div class="row">
-        <div class="col-md">Broccoli</div>
-        <div class="col-md">Hmm lekker</div>
-      </div>
-      <div class="row">
-        <div class="col-md">Broccoli</div>
-        <div class="col-md">Hmm lekker</div>
-      </div>
+<main class="main">
+  <div class="main-element-top bg-white">
+    <p>Producten</p>
+  </div>
+  <div class="main-element bg-white">
+    <div class="">
+      <div class="">Naam</div>
+      <div class="">Omschrijving</div>
     </div>
-    <div class="col-md-4 mr-lg-5 m-2 p-3 bg-white rounded-lg shadow-sm">
-      <div class="row">
-        <div class="col-md">Naam</div>
-        <div class="col-md">Omschrijving</div>
-      </div>
-      <div class="row">
-        <div class="col-md">Broccoli</div>
-        <div class="col-md">Hmm lekker</div>
-      </div>
-      <div class="row">
-        <div class="col-md">Broccoli</div>
-        <div class="col-md">Hmm lekker</div>
-      </div>
+    <div class="">
+      <div class="">Naam</div>
+      <div class="">Omschrijving</div>
+    </div>
+    <div class="">
+      <div class="">Naam</div>
+      <div class="">Omschrijving</div>
     </div>
   </div>
 </main>
-
-<!--
-<section class="pricing py-5">
-  <div class="container">
-    <div class="row">
-      &lt;!&ndash; Free Tier &ndash;&gt;
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects
-              </li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
-            </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
-          </div>
-        </div>
-      </div>
-      &lt;!&ndash; Plus Tier &ndash;&gt;
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-            <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
-            </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
-          </div>
-        </div>
-      </div>
-      &lt;!&ndash; Pro Tier &ndash;&gt;
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-            <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
-            </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-
 
 <router-outlet></router-outlet>

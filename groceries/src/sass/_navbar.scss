@@ -1,0 +1,37 @@
+.nav {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  .icon_wrap {
+    background-color: lightgray;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 15%;
+    padding: 0.40rem;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 80%;
+    .nav-list-item {
+      display: flex;
+      a {
+        padding-left: 16px;
+
+      }
+    }
+  }
+
+  .nav-search{
+    margin-left: 16px;
+  }
+}
+
+.bg-header {
+  /*background: {
+    color: $bg-color;
+  }*/
+  @include background-header;
+}

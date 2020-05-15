@@ -1,0 +1,16 @@
+.main {
+
+  width: 50%;
+  float: left;
+  margin-left: 64px;
+
+  .main-element {
+    padding: 16px;
+
+    &-top {
+      padding: 16px;
+      margin-top: 32px;
+      border-bottom: 1px solid $bg-color;
+    }
+  }
+}

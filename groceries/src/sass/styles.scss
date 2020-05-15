@@ -1,60 +1,49 @@
 @import './_variables';
 @import './_mixins';
-
-html, body {
-  height: 100%;
-}
+@import './_navbar';
+@import './_sidemenu';
+@import './_main';
+@import './_defaults';
 
 /* Extra small viewports */
 @media (max-width: $vp-sm-max) {
   body {
-    padding: {
-      top: 250px;
-    }
+
   }
 }
 
 /* Small viewports */
-@media (min-width:  $vp-sm-min) {
+@media (min-width: $vp-sm-min) {
   body {
-    padding: {
-      top: 220px;
-    }
+
   }
 }
 
 /* Medium viewports */
-@media (min-width:  $vp-md-min) {
+@media (min-width: $vp-md-min) {
   body {
-    padding: {
-      top: 80px;
-    }
+
   }
 }
 
 /* Large viewports */
-@media (min-width:  $vp-lg-min) {
+@media (min-width: $vp-lg-min) {
   body {
-    padding: {
-      top: 100px;
-    }
   }
 }
 
 /* Extra large viewports */
-@media (min-width:  $vp-xl-min) {
+@media (min-width: $vp-xl-min) {
 
+}
+
+
+html, body {
+  height: 100%;
 }
 
 body {
   font: {
     family: Roboto, "Helvetica Neue", sans-serif;
   }
-}
-
-._bg-header {
-  /*background: {
-    color: $bg-color;
-  }*/
-  @include background-header;
 }
