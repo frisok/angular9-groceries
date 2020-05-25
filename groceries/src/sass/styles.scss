@@ -42,8 +42,10 @@ html, body {
   height: 100%;
 }
 
-body {
+.body {
   font: {
-    family: Roboto, "Helvetica Neue", sans-serif;
+    family: Roboto, sans-serif;
+    size: 16px;
   }
+  background-color: $bg-color;
 }

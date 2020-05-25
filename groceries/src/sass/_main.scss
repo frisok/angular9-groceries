@@ -3,14 +3,28 @@
   width: 50%;
   float: left;
   margin-left: 64px;
+  padding: 16px;
 
   .main-element {
     padding: 16px;
-
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 0 #e5e5e5;
     &-top {
-      padding: 16px;
       margin-top: 32px;
-      border-bottom: 1px solid $bg-color;
+      border-bottom: 2px solid $bg-color;
+      font-size: $font-size-md;
+    }
+    .row {
+      padding-left: 16px;
+      padding-bottom: 16px;
+      display: flex;
+      font-size: $font-size-sm;
+      &-label {
+        width: 50%;
+      }
+      &-value {
+        color: $font-color-light;
+      }
     }
   }
 }
