@@ -43,6 +43,20 @@
 
   .nav-search {
     margin-left: 16px;
+
+    .nav-search-field {
+      @include search;
+    }
+
+    .nav-search-button {
+      margin-left: 16px;
+      @include search;
+
+    }
+
+    .nav-search-button:hover {
+      background-color: darkgray;
+    }
   }
 }
 
