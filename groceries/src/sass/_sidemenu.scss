@@ -1,10 +1,33 @@
 .sidebar {
   width: 15%;
-  min-height: 50%;
+  min-height: 500px;
   float: left;
-  padding: 16px;
+  padding: 32px;
   box-shadow: 2px 2px 3px 0 #e5e5e5;
   border-radius: 2px;
-  color: $font-color-light;
   font-size: $font-size-md;
+
+  .side-list {
+
+    .side-list-item {
+      padding-bottom: 16px;
+      &-top {
+        margin-top: 32px;
+      }
+
+      .link {
+        color: $font-color-light;
+      }
+
+      :hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      &-selected {
+        color: black;
+        font-size: $font-size-lg;
+      }
+    }
+  }
 }

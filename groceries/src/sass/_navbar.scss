@@ -15,23 +15,37 @@
   .nav-list {
     display: flex;
     width: 80%;
+
     .nav-list-item {
       display: flex;
-      font-size: x-large;
-      a {
-        padding-left: 16px;
+      font-size: $font-size-lg;
+      padding-left: 24px;
+
+      .link {
+        color: $color-light-blue;
+      }
+
+      :hover {
+        color: $color-dark-blue;
+        text-decoration: underline;
+      }
+
+      .icon {
+        color: $color-dark-blue;
+        font-size: $font-size-xxl;
+      }
+
+      &-selected {
+        color: $color-dark-blue;
       }
     }
   }
 
-  .nav-search{
+  .nav-search {
     margin-left: 16px;
   }
 }
 
 .bg-header {
-  /*background: {
-    color: $bg-color;
-  }*/
   @include background-header;
 }
