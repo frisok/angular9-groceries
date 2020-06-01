@@ -1,36 +1,4 @@
-<nav class="nav bg-header">
-
-  <!-- <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-     <span class="navbar-toggler-icon"></span>
-   </button>-->
-
-  <div class="left">
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <!--<div class="icon_wrap">-->
-        <i class="fa fa-shopping-basket icon"></i>
-        <!--</div>-->
-      </li>
-      <li class="nav-list-item">
-        <a class="link" href="#">Nu</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-list-item-selected" href="#">Lijsten</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="link" href="#">Producten</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="right nav-search">
-    <form>
-      <input class="nav-search-field" type="text" placeholder="Zoek..." aria-label="Zoek">
-      <button class="nav-search-button" type="submit">Zoek</button>
-    </form>
-  </div>
-
-</nav>
+<app-navbar></app-navbar>
 
 <!--
 
@@ -41,78 +9,8 @@
 <p>https://startbootstrap.com/templates/business-frontpage/</p>
 
 -->
-<div class="sidebar bg-white">
-  <ul class="side-list">
-    <li class="side-list-item side-list-item-top"><a class="link" href="#">1 juni 2020</a></li>
-    <li class="side-list-item"><a class="link" href="#">8 juni 2020</a></li>
-    <li class="side-list-item"><a class="side-list-item-selected" href="#">15 juni 2020</a></li>
-    <li class="side-list-item"><a class="link" href="#">21 juni 2020</a></li>
-    <li class="side-list-item"><a class="link" href="#">28 juni 2020</a></li>
-    <li class="side-list-item"><a class="link" href="#">3 juli 2020</a></li>
-    <li class="side-list-item"><a class="link" href="#">11 juni 2020</a></li>
-  </ul>
-</div>
+<app-grocery-list></app-grocery-list>
 
-<main class="main">
-  <div class="main-element main-element-top bg-white">
-    <p>Producten</p>
-  </div>
-  <div class="main-element bg-white">
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-    <div class="row">
-      <div class="row-label">Naam</div>
-      <div class="row-value">Omschrijving</div>
-    </div>
-
-
-  </div>
-</main>
+<app-grocery-items></app-grocery-items>
 
 <router-outlet></router-outlet>

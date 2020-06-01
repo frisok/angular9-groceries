@@ -4,37 +4,19 @@
 @import './_sidemenu';
 @import './_main';
 @import './_defaults';
+@import "./_hamburger";
 
-/* Extra small viewports */
-@media (max-width: $vp-sm-max) {
+/* small viewports and down */
+@media (max-width: $vp-md-min) {
   body {
-
   }
 }
 
-/* Small viewports */
-@media (min-width: $vp-sm-min) {
-  body {
-
-  }
-}
-
-/* Medium viewports */
+/* Medium viewports and up */
 @media (min-width: $vp-md-min) {
   body {
 
   }
-}
-
-/* Large viewports */
-@media (min-width: $vp-lg-min) {
-  body {
-  }
-}
-
-/* Extra large viewports */
-@media (min-width: $vp-xl-min) {
-
 }
 
 
@@ -48,4 +30,9 @@ html, body {
     size: 16px;
   }
   background-color: $bg-color;
+}
+
+.hidden {
+  display: none;
+  transition: all 500ms ease-in-out;
 }

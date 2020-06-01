@@ -1,0 +1,32 @@
+<nav class="nav bg-header">
+
+  <div class="left" [ngClass]="searchClass">
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <!--<div class="icon_wrap">-->
+        <i class="fa fa-shopping-basket icon"></i>
+        <!--</div>-->
+      </li>
+      <li class="nav-list-item">
+        <a class="link" href="#">Nu</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="nav-list-item-selected" href="#">Lijsten</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="link" href="#">Producten</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="hamburger" (click)="toggleMenu()" >
+    <a id="nav-toggle" [ngClass]="hamburgerClass" href="#"><span></span></a>
+  </div>
+  <div class="right nav-search" [ngClass]="searchClass">
+    <form>
+      <input class="nav-search-field" type="text" placeholder="Zoek..." aria-label="Zoek">
+      <button class="nav-search-button" type="submit">Zoek</button>
+    </form>
+  </div>
+
+</nav>
