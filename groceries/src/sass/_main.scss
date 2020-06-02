@@ -1,30 +1,90 @@
 .main {
-
-  width: 50%;
   float: left;
-  margin-left: 64px;
-  padding: 16px;
+  /*padding: 4px;*/
 
   .main-element {
     padding: 16px;
     border-radius: 2px;
     box-shadow: 2px 2px 3px 0 #e5e5e5;
-
     &-top {
-      margin-top: 32px;
       border-bottom: 2px solid $bg-color;
       font-size: $font-size-md;
     }
+
     .row {
-      padding-left: 16px;
-      padding-bottom: 16px;
-      display: flex;
-      font-size: $font-size-sm;
+
       &-label {
-        width: 50%;
       }
+
       &-value {
         color: $font-color-light;
+      }
+
+    }
+  }
+}
+
+/* Small viewports and down*/
+@media (max-width: $vp-md-min) {
+  .main {
+    width: 100%;
+    .main-element {
+      &-top {
+        display: none;
+      }
+
+      .row {
+        border-bottom: 2px solid $bg-color;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+          display: block;
+          max-width: 65%;
+          overflow-wrap: break-word;
+        }
+
+        &-right {
+          padding: 4px;
+          .plus-minus{
+            border: none;
+            background-color: transparent;
+          }
+          .quantity{
+            border: none;
+            text-align: center;
+            width: 36px;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+
+/* Medium viewports and up */
+@media (min-width: $vp-md-min) {
+  .main {
+    width: 50%;
+    margin-left: 64px;
+
+    .main-element {
+
+      &-top {
+        margin-top: 32px;
+      }
+
+      .row {
+        padding-left: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        font-size: $font-size-sm;
+        &-label {
+          width: 50%;
+        }
       }
     }
   }
