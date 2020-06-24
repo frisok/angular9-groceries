@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {el} from '@angular/platform-browser/testing/src/browser_util';
+import {Router} from '@angular/router';
 import {Observable, of} from 'rxjs';
 import {delay} from 'rxjs/operators';
 
@@ -12,11 +13,21 @@ export class NavbarComponent implements OnInit {
 
   hamburgerClass: string = 'active';
   searchClass: string = '';
+  selectedItem: string;
 
-  constructor() {
+  constructor(private router: Router) {
+    this.selectedItem = undefined;
   }
 
   ngOnInit() {
+    const url: string = this.router.url;
+    if (url.match('/current')) {
+      this.selectedItem = 'current';
+    } else if (url.match('/lists')) {
+      this.selectedItem = 'list';
+    } else {
+      this.selectedItem = 'product';
+    }
   }
 
   toggleMenu(): void {
@@ -24,6 +35,10 @@ export class NavbarComponent implements OnInit {
     of(null).pipe(delay(500)).subscribe(() => {
       this.searchClass = this.hamburgerClass == '' ? 'hidden' : '';
     })
+  }
+
+  setSelectedItem(selectedItem: string): void {
+    this.selectedItem = selectedItem;
   }
 
 }

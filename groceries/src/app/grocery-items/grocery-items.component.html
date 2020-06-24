@@ -1,191 +1,22 @@
-<main class="main">
+<div class="main-element main-element-top">
+  <p>Producten</p>
+</div>
 
-  <div class="main-element main-element-top bg-white">
-    <p>Producten</p>
+<div class="main-element">
+  <div class="row" *ngFor="let item of items;">
+    <div class="row-left">
+      <div class="row-label">Naam {{item}}</div>
+      <div class="row-value"><span *ngIf="item != 3 && item != 6">Omschrijving {{item}}</span></div>
+    </div>
+    <div class="row-right">
+      <button type="button" class="plus-minus">
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </button>
+      <input type="text" value="1" class="quantity"/>
+      <button type="button" class="plus-minus">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
 
-  <div class="main-element bg-white">
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naamflgdklfgkldjfgkljdgkljdfgkjdklfgjkldjfgkldjfgkldjfgdklfgjkl</div>
-        <div class="row-value">Omschrijvingsdlkfdfnsnfjsnhgfkjhsngkjnhgjndgkjndfgkjndfkjgndjgndfjgndkjfgndkkfjgndfgjnjk</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naamulhlhkjhkjh</div>
-        <div class="row-value">Omschrijvingjhjjjjjjjjjjkjhkj;hkjhkjhkjjjjjj</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-left">
-        <div class="row-label">Naam</div>
-        <div class="row-value">Omschrijving</div>
-      </div>
-      <div class="row-right">
-        <button type="button" class="plus-minus">
-          <i class="fa fa-minus-circle" aria-hidden="true"></i>
-        </button>
-        <input type="text" value="1" class="quantity"/>
-        <button type="button" class="plus-minus">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-
-  </div>
-
-</main>
+</div>

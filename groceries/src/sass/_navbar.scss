@@ -72,7 +72,7 @@
       padding-left: 24px;
 
       .link {
-        color: $color-light-blue;
+        color: $navbar-link-text-color;
       }
 
       :hover {
@@ -81,12 +81,13 @@
       }
 
       .icon {
-        color: $color-dark-blue;
+        color: $navbar-link-text-color;
         font-size: $font-size-xxl;
       }
 
       &-selected {
-        color: $color-dark-blue;
+        color: $navbar-link-text-color;
+        font-weight: 900;
       }
     }
   }
@@ -106,8 +107,7 @@
 
     .nav-search-button {
       margin-left: 16px;
-      @include search;
-
+      @include search-button;
     }
 
     .nav-search-button:hover {

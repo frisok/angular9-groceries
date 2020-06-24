@@ -6,6 +6,7 @@
     padding: 16px;
     border-radius: 2px;
     box-shadow: 2px 2px 3px 0 #e5e5e5;
+    background-color: $main-color;
     &-top {
       border-bottom: 2px solid $bg-color;
       font-size: $font-size-md;
@@ -14,10 +15,20 @@
     .row {
 
       &-label {
+        color: $main-text-color;
+        font-weight: 500;
       }
 
       &-value {
-        color: $font-color-light;
+        color: $main-text-color-light;
+      }
+
+      .fa-plus{
+        color: lightgrey;
+      }
+
+      .fa-minus {
+        color: lightgrey;
       }
 
     }
@@ -53,8 +64,12 @@
           }
           .quantity{
             border: none;
+            border-radius: 3px;
             text-align: center;
             width: 36px;
+            background-color: $main-input-color;
+            color: $main-input-text-color;
+            font-weight: 500;
           }
         }
 

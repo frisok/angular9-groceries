@@ -8,13 +8,13 @@
         <!--</div>-->
       </li>
       <li class="nav-list-item">
-        <a class="link" href="#">Nu</a>
+        <a [ngClass]="selectedItem == 'current' ? 'nav-list-item-selected' : 'link'" routerLink="/current" (click)="setSelectedItem('current')">Nu</a>
       </li>
       <li class="nav-list-item">
-        <a class="nav-list-item-selected" href="#">Lijsten</a>
+        <a [ngClass]="selectedItem == 'product' ? 'nav-list-item-selected' : 'link'" routerLink="" (click)="setSelectedItem('product')">Producten</a>
       </li>
       <li class="nav-list-item">
-        <a class="link" href="#">Producten</a>
+        <a [ngClass]="selectedItem == 'list' ? 'nav-list-item-selected' : 'link'" routerLink="/lists" (click)="setSelectedItem('list')">Lijsten</a>
       </li>
     </ul>
   </div>

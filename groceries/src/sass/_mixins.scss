@@ -1,5 +1,6 @@
 @mixin background-header {
-  background: linear-gradient(to right, #a4e9f4, #17a2b8);
+  /*background: linear-gradient(to right, #a4e9f4, #17a2b8);*/
+  background: $navbar-color;
 }
 
 @mixin search {
@@ -9,7 +10,22 @@
   border-style: solid;
   border-width: 1.5px;
 
-  background-color: $bg-color;
+  /*background-color: $bg-color;*/
+  background: $navbar-input-color;
+  color: $navbar-input-text-color;
+  border-color: lightgray;
+}
+
+@mixin search-button {
+  padding: 8px;
+
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1.5px;
+
+  /*background-color: $bg-color;*/
+  background: $navbar-input-button-color;
+  color: $navbar-input-button-text-color;
   border-color: lightgray;
 }
 

@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
 import { GroceryItemsComponent } from './grocery-items/grocery-items.component';
+import { CurrentComponent } from './current/current.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GroceryListComponent,
-    GroceryItemsComponent
+    GroceryItemsComponent,
+    CurrentComponent
   ],
   imports: [
     BrowserModule,
